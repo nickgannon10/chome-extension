@@ -1,0 +1,41 @@
+{
+    "name": "X Spaces Recording and Question/Answering Chrome Extension",
+    "version": "2.1.3",
+    "description": "Records and Summarizes X Space",
+    "icons": {
+        "16": "assets/icons/icon-16.png",
+        "48": "assets/icons/icon-48.png",
+        "128": "assets/icons/icon-128.png"
+    },
+    "host_permissions": [
+        "https://api.openai.com/v1/completions", 
+        "https://x.com/*"
+    ],
+    "permissions": [
+        "storage",
+        "activeTab",
+        "tabCapture",
+        "scripting",
+        "tabs", 
+        "downloads",
+        "background",
+        "audioCapture",
+        "offscreen"
+      ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://x.com/*"],
+          "js": ["contentScript.js"],
+          "run_at": "document_end"
+        }
+    ], 
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "options_page": "options/options.html",
+    "manifest_version": 3
+}
+
