@@ -1,8 +1,6 @@
 # Proof of Concept for RAG X Space RAG Recorder
 
-[Watch the video](public/ChromeExtension.mp4)
-
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=f-0giEdEA2o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Watch the video](https://img.youtube.com/vi/f-0giEdEA2o/0.jpg)](https://www.youtube.com/watch?v=f-0giEdEA2o)
 
 # setup
 
