@@ -1,5 +1,7 @@
 # Proof of Concept for RAG X Space RAG Recorder
 
+[Watch the video](/Users/nicholasgannon/Desktop/chrome-extension/public/ChromeExtension.mp4)
+
 # setup
 
 1. git clone

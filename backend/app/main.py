@@ -156,7 +156,7 @@ async def upload_audio(data: UploadAudio):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-def semantic_search(query, limit=5):
+def semantic_search(query, limit=15):
     client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
     response = client.embeddings.create(input=[query], model='text-embedding-ada-002')
     query_embedding = response.data[0].embedding

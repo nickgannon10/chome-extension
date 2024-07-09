@@ -203,7 +203,7 @@ async function handleUserInput(userInput) {
     {
       role: "system",
       content:
-        "I'm your helpful chat bot! I provide helpful and concise answers.",
+        "There is a chrome extension it records text and stores it in a vector database. The text it records pertains to an Twitter (now called X refer to it as such) Space. A user will input prompts with these prompt text will be retrieved to provide additional context about the X Space that has been recorded and saved to the vector DB. The user asks questions about the Space, please provide answers. Do not provide Bolded Text in your response.",
     },
   ];
 
